@@ -41,15 +41,15 @@ function handleTime(){
 
   return (
     <>    
-      <div class="boxes">
-        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam rep
+      <div className="boxes">
+        <div className="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam rep
         erum dolorem magnam repellendus debitis reprehenderit odit odio alias iste error quas libero omnis, at id expedita! Harum architecto, deserunt, excepturi est quidem ab!</div>
-        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam repellendus debitis reprehenderit odit odio alias iste error quas libero omnis, at id expedita! Harum architecto, deserunt, excepturi est quidem veritatis fuga accusamus provident blanditiis minima ab!</div>
-        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam repellendus deitis reprehenderit odit odio alias iste error quas libero omnis, at id expedita! Harum architecto, deserunt, excepturi est quidem veritatis fuga accusamus provident blanditiis minima ab!</div>
+        <div className="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam repellendus debitis reprehenderit odit odio alias iste error quas libero omnis, at id expedita! Harum architecto, deserunt, excepturi est quidem veritatis fuga accusamus provident blanditiis minima ab!</div>
+        <div className="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi sed veniam! Maxime et quasi, amet fuga doloribus, fugiat sequi rerum dolorem magnam repellendus deitis reprehenderit odit odio alias iste error quas libero omnis, at id expedita! Harum architecto, deserunt, excepturi est quidem veritatis fuga accusamus provident blanditiis minima ab!</div>
       </div>
       <br />
       <br />
-      <div class="dates">
+      <div className="dates">
         the current date is : {today.getDate()} : {today.getMonth()} : {today.getFullYear()} <br />
         <br />
         <button onClick={handleTime}>

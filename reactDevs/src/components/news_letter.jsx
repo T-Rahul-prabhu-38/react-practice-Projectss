@@ -1,12 +1,16 @@
-import NewsListItem from "./news_letter_item";
+import NewsListItem from '../components/news_letter_item'
 
-export default function NewsList(){
+const NewsList = (props) => {
+
+    const newsHandler = props.news.map( item =>(
+       <NewsListItem key={item.id} item={item}/>
+    ));
+
     return(
         <>
-        <div>
-            News - List
-        </div>
-        
+            { newsHandler }
         </>
-);
+    )
 }
+
+export default NewsList;
