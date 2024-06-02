@@ -1,0 +1,45 @@
+body{
+  margin: 0px;
+}
+
+.box1{
+width: 300px;
+border: solid ;
+margin: 5%;
+padding: 25px;
+background-color: aliceblue;
+border-radius: 30px;
+
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.dates{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 20px; 
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+button{
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  padding: 10px;
+  border-radius:10px;
+  color: black;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
