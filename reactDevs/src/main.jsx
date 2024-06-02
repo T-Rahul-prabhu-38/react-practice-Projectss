@@ -14,12 +14,26 @@ const Main = () => {
 
   const[news,updateNews] = useState(newsData);
 
-  // console.log(news);
+  const getKeyWords = (event)=>{
+    let keyWords = (event.target.value);
+    let filtered = newsData.filter(items =>{
+      return items.title.indexOf(keyWords) >-1;
+    })
+    updateNews(filtered);
+  }
+
   return (
     <>
       <React.StrictMode>
-        <Header />
-        <NewsList news={news}/>
+        <Header getKeyWords={getKeyWords}/>
+        <NewsList news={news}>
+          <div>
+            <b>
+              I am the Child
+            </b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias nam culpa nobis, quibusdam blanditiis praesentium. Inventore pariatur quo optio ab, dignissimos, sint vitae error explicabo exercitationem asperiores dolore ratione suscipit. Recusandae est corrupti beatae veritatis eum eveniet consectetur suscipit quae! Pariatur delectus soluta tempore harum commodi veniam, maxime vero?</p>
+          </div>
+        </NewsList>
         <App />
         <Form />
         <StatePlayground />

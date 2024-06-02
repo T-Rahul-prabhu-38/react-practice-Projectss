@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import Navigation from './nav';
 
-const Header = () => {
+const Header = (props) => {
 
-    const[keyword,setKeyWord] = useState('');
-
-    const onChangeHandler = (event) => {
-        setKeyWord(event.target.value);
-    }
+    const[keyword,setword] = useState('');
 
     return(
         <header>
             <div className="logo">Awesome News</div>
-            <input onChange={onChangeHandler} />
+            <input onChange={props.getKeyWords} />
             the key word is {keyword} 
             <Navigation/>
         </header>
